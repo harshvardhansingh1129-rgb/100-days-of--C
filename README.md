@@ -12,3 +12,4 @@ Solutions for the **100 Days of Code (Basics of Coding with C)** challenge at UP
 
 | Day | Date | Section / Topic | Solution Files |
 | :--- | :--- | :--- | :--- |
+| Day 01 | 2026-08-10 | User Inputs, Operations & Output | [calculator.c](Day%2001/calculator.c), [sum.c](Day%2001/sum.c) |
