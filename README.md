@@ -16,3 +16,4 @@ Solutions for the **100 Days of Code (Basics of Coding with C)** challenge at UP
 | Day 02 | 2026-08-11 | User Inputs, Operations & Output | [circle.c](Day%2002/circle.c), [rect.c](Day%2002/rect.c) |
 | Day 03 | 2026-08-12 | User Inputs, Operations & Output | [ctf.c](Day%2003/ctf.c), [swap.c](Day%2003/swap.c) |
 | Day 04 | 2026-08-13 | User Inputs, Operations & Output | [natural.c](Day%2004/natural.c), [swapp.c](Day%2004/swapp.c) |
+| Day 05 | 2026-08-14 | User Inputs, Operations & Output | [interest.c](Day%2005/interest.c), [time.c](Day%2005/time.c) |
