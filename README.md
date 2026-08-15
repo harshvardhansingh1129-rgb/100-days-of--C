@@ -17,3 +17,4 @@ Solutions for the **100 Days of Code (Basics of Coding with C)** challenge at UP
 | Day 03 | 2026-08-12 | User Inputs, Operations & Output | [ctf.c](Day%2003/ctf.c), [swap.c](Day%2003/swap.c) |
 | Day 04 | 2026-08-13 | User Inputs, Operations & Output | [natural.c](Day%2004/natural.c), [swapp.c](Day%2004/swapp.c) |
 | Day 05 | 2026-08-14 | User Inputs, Operations & Output | [interest.c](Day%2005/interest.c), [time.c](Day%2005/time.c) |
+| Day 06 | 2026-08-15 | Conditional Statements | [eo.c](Day%2006/eo.c), [pn.c](Day%2006/pn.c) |
