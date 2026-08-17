@@ -19,3 +19,4 @@ Solutions for the **100 Days of Code (Basics of Coding with C)** challenge at UP
 | Day 05 | 2026-08-14 | User Inputs, Operations & Output | [interest.c](Day%2005/interest.c), [time.c](Day%2005/time.c) |
 | Day 06 | 2026-08-15 | Conditional Statements | [eo.c](Day%2006/eo.c), [pn.c](Day%2006/pn.c) |
 | Day 07 | 2026-08-16 | Conditional Statements | [vc.c](Day%2007/vc.c), [year.c](Day%2007/year.c) |
+| Day 08 | 2026-08-17 | Conditional Statements | [alpha.c](Day%2008/alpha.c), [large.c](Day%2008/large.c) |
