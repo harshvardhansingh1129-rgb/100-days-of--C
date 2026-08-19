@@ -21,3 +21,4 @@ Solutions for the **100 Days of Code (Basics of Coding with C)** challenge at UP
 | Day 07 | 2026-08-16 | Conditional Statements | [vc.c](Day%2007/vc.c), [year.c](Day%2007/year.c) |
 | Day 08 | 2026-08-17 | Conditional Statements | [alpha.c](Day%2008/alpha.c), [large.c](Day%2008/large.c) |
 | Day 09 | 2026-08-18 | Conditional Statements | [grade.c](Day%2009/grade.c), [quadratic.c](Day%2009/quadratic.c) |
+| Day 10 | 2026-08-19 | Conditional Statements | [triangle.c](Day%2010/triangle.c), [week.c](Day%2010/week.c) |
