@@ -24,3 +24,4 @@ Solutions for the **100 Days of Code (Basics of Coding with C)** challenge at UP
 | Day 10 | 2026-08-19 | Conditional Statements | [triangle.c](Day%2010/triangle.c), [week.c](Day%2010/week.c) |
 | Day 11 | 2026-08-20 | Conditional Statements | [lose.c](Day%2011/lose.c), [month.c](Day%2011/month.c) |
 | Day 12 | 2026-08-21 | Conditional Statements | [electricity.c](Day%2012/electricity.c), [library.c](Day%2012/library.c) |
+| Day 13 | 2026-08-22 | Conditional Statements | [number.c](Day%2013/number.c), [problem.c](Day%2013/problem.c) |
