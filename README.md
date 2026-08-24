@@ -26,3 +26,4 @@ Solutions for the **100 Days of Code (Basics of Coding with C)** challenge at UP
 | Day 12 | 2026-08-21 | Conditional Statements | [electricity.c](Day%2012/electricity.c), [library.c](Day%2012/library.c) |
 | Day 13 | 2026-08-22 | Conditional Statements | [number.c](Day%2013/number.c), [problem.c](Day%2013/problem.c) |
 | Day 14 | 2026-08-23 | Loops without Arrays/Strings | [evenp.c](Day%2014/evenp.c), [sumo.c](Day%2014/sumo.c) |
+| Day 15 | 2026-08-24 | Loops without Arrays/Strings | [factorial.c](Day%2015/factorial.c), [reverse.c](Day%2015/reverse.c) |
