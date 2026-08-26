@@ -28,3 +28,4 @@ Solutions for the **100 Days of Code (Basics of Coding with C)** challenge at UP
 | Day 14 | 2026-08-23 | Loops without Arrays/Strings | [evenp.c](Day%2014/evenp.c), [sumo.c](Day%2014/sumo.c) |
 | Day 15 | 2026-08-24 | Loops without Arrays/Strings | [factorial.c](Day%2015/factorial.c), [reverse.c](Day%2015/reverse.c) |
 | Day 16 | 2026-08-25 | Loops without Arrays/Strings | [binary.c](Day%2016/binary.c), [palindrome.c](Day%2016/palindrome.c) |
+| Day 17 | 2026-08-26 | Loops without Arrays/Strings | [armstrong.c](Day%2017/armstrong.c), [loop.c](Day%2017/loop.c) |
