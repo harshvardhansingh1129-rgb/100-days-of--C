@@ -30,3 +30,4 @@ Solutions for the **100 Days of Code (Basics of Coding with C)** challenge at UP
 | Day 16 | 2026-08-25 | Loops without Arrays/Strings | [binary.c](Day%2016/binary.c), [palindrome.c](Day%2016/palindrome.c) |
 | Day 17 | 2026-08-26 | Loops without Arrays/Strings | [armstrong.c](Day%2017/armstrong.c), [loop.c](Day%2017/loop.c) |
 | Day 18 | 2026-08-27 | Loops without Arrays/Strings | [factor.c](Day%2018/factor.c), [hcf.c](Day%2018/hcf.c) |
+| Day 19 | 2026-08-28 | Loops without Arrays/Strings | [c.c](Day%2019/c.c), [cc.c](Day%2019/cc.c) |
