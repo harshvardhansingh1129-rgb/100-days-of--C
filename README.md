@@ -32,3 +32,4 @@ Solutions for the **100 Days of Code (Basics of Coding with C)** challenge at UP
 | Day 18 | 2026-08-27 | Loops without Arrays/Strings | [factor.c](Day%2018/factor.c), [hcf.c](Day%2018/hcf.c) |
 | Day 19 | 2026-08-28 | Loops without Arrays/Strings | [c.c](Day%2019/c.c), [cc.c](Day%2019/cc.c) |
 | Day 20 | 2026-08-29 | Loops without Arrays/Strings | [ccc.c](Day%2020/ccc.c), [cccc.c](Day%2020/cccc.c) |
+| Day 21 | 2026-08-30 | Loops without Arrays/Strings | [perfect.c](Day%2021/perfect.c), [swapf.c](Day%2021/swapf.c) |
