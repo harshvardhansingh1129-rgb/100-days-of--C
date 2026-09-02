@@ -35,3 +35,4 @@ Solutions for the **100 Days of Code (Basics of Coding with C)** challenge at UP
 | Day 21 | 2026-08-30 | Loops without Arrays/Strings | [perfect.c](Day%2021/perfect.c), [swapf.c](Day%2021/swapf.c) |
 | Day 22 | 2026-08-31 | Loops without Arrays/Strings | [n.c](Day%2022/n.c), [strong.c](Day%2022/strong.c) |
 | Day 23 | 2026-09-01 | Loops without Arrays/Strings | [approx.c](Day%2023/approx.c), [pattern.c](Day%2023/pattern.c) |
+| Day 24 | 2026-09-02 | Nested Loops without Arrays/Strings | [p.c](Day%2024/p.c), [pp.c](Day%2024/pp.c) |
