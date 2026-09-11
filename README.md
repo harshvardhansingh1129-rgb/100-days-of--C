@@ -40,3 +40,4 @@ Solutions for the **100 Days of Code (Basics of Coding with C)** challenge at UP
 | Day 26 | 2026-09-04 | Nested Loops without Arrays/Strings | [ppt.c](Day%2026/ppt.c), [pptt.c](Day%2026/pptt.c) |
 | Day 27 | 2026-09-05 | Nested Loops without Arrays/Strings | [pater.c](Day%2027/pater.c), [patter.c](Day%2027/patter.c) |
 | Day 28 | 2026-09-06 | Nested Loops without Arrays/Strings | [parn.c](Day%2028/parn.c), [parrn.c](Day%2028/parrn.c) |
+| Day 29 | 2026-09-11 | Arrays (1D) | [armin.c](Day%2029/armin.c), [arsum.c](Day%2029/arsum.c) |
