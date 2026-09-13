@@ -1,28 +1,37 @@
 #include <stdio.h>
 
 int main() {
-    int n, i, key, found = 0;
+    int n, k, i, j, temp;
 
+    printf("Enter the number of elements: ");
     scanf("%d", &n);
 
     int arr[n];
 
+    printf("Enter %d elements:\n", n);
     for (i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
 
-    scanf("%d", &key);
+    printf("Enter the number of positions to rotate: ");
+    scanf("%d", &k);
 
-    for (i = 0; i < n; i++) {
-        if (arr[i] == key) {
-            printf("Found at index %d", i);
-            found = 1;
-            break;
+    k = k % n;
+
+    // Rotate array right by k positions
+    for (i = 0; i < k; i++) {
+        temp = arr[n - 1];
+
+        for (j = n - 1; j > 0; j--) {
+            arr[j] = arr[j - 1];
         }
+
+        arr[0] = temp;
     }
 
-    if (found == 0) {
-        printf("-1");
+    printf("Array after right rotation: ");
+    for (i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
     }
 
     return 0;
