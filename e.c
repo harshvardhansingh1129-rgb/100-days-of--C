@@ -1,28 +1,28 @@
 #include <stdio.h>
 
 int main() {
-    int n, i, temp;
+    int rows, cols, i, j;
 
-    printf("Enter number of elements: ");
-    scanf("%d", &n);
+    printf("Enter number of rows and columns: ");
+    scanf("%d %d", &rows, &cols);
 
-    int arr[n];
+    int matrix[rows][cols];
 
-    printf("Enter %d elements: ", n);
-    for (i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
+    printf("Enter matrix elements:\n");
+
+    for (i = 0; i < rows; i++) {
+        for (j = 0; j < cols; j++) {
+            scanf("%d", &matrix[i][j]);
+        }
     }
 
-    // Reverse the array without extra space
-    for (i = 0; i < n / 2; i++) {
-        temp = arr[i];
-        arr[i] = arr[n - 1 - i];
-        arr[n - 1 - i] = temp;
-    }
+    printf("The matrix is:\n");
 
-    printf("Reversed array: ");
-    for (i = 0; i < n; i++) {
-        printf("%d ", arr[i]);
+    for (i = 0; i < rows; i++) {
+        for (j = 0; j < cols; j++) {
+            printf("%d ", matrix[i][j]);
+        }
+        printf("\n");
     }
 
     return 0;
