@@ -44,3 +44,4 @@ Solutions for the **100 Days of Code (Basics of Coding with C)** challenge at UP
 | Day 30 | 2026-09-12 | Arrays (1D) | [np.c](Day%2030/np.c), [ns.c](Day%2030/ns.c) |
 | Day 31 | 2026-09-13 | Arrays (1D) | [e.c](Day%2031/e.c), [g.c](Day%2031/g.c) |
 | Day 32 | 2026-09-14 | Arrays (1D) | [digit.c](Day%2032/digit.c), [h.c](Day%2032/h.c) |
+| Day 33 | 2026-09-15 | Arrays (1D) | [j.c](Day%2033/j.c), [k.c](Day%2033/k.c) |
