@@ -1,32 +1,31 @@
 #include <stdio.h>
 
-int main() {
-    int n, i, pos;
+int main()
+{
+    int a[100][100];
+    int r, c, i, j;
+    int sum = 0;
 
-    printf("Enter the size of array: ");
-    scanf("%d", &n);
+    printf("Enter number of rows and columns: ");
+    scanf("%d %d", &r, &c);
 
-    int arr[n];
+    printf("Enter matrix elements:\n");
 
-    printf("Enter %d elements: ", n);
-    for (i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
+    for (i = 0; i < r; i++)
+    {
+        for (j = 0; j < c; j++)
+        {
+            scanf("%d", &a[i][j]);
+        }
     }
 
-    printf("Enter position to delete: ");
-    scanf("%d", &pos);
-
-    // Shift elements to the left
-    for (i = pos - 1; i < n - 1; i++) {
-        arr[i] = arr[i + 1];
+    // Sum of main diagonal elements
+    for (i = 0; i < r; i++)
+    {
+        sum = sum + a[i][i];
     }
 
-    n--;
-
-    printf("Array after deletion: ");
-    for (i = 0; i < n; i++) {
-        printf("%d ", arr[i]);
-    }
+    printf("Sum of main diagonal elements = %d\n", sum);
 
     return 0;
 }
