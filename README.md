@@ -46,3 +46,4 @@ Solutions for the **100 Days of Code (Basics of Coding with C)** challenge at UP
 | Day 32 | 2026-09-14 | Arrays (1D) | [digit.c](Day%2032/digit.c), [h.c](Day%2032/h.c) |
 | Day 33 | 2026-09-15 | Arrays (1D) | [j.c](Day%2033/j.c), [k.c](Day%2033/k.c) |
 | Day 34 | 2026-09-16 | Arrays (1D) | [l.c](Day%2034/l.c), [m.c](Day%2034/m.c) |
+| Day 35 | 2026-09-17 | Arrays (1D) | [g.c](Day%2035/g.c), [o.c](Day%2035/o.c) |
