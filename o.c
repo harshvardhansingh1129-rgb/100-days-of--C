@@ -1,32 +1,47 @@
 #include <stdio.h>
 
-int main() {
-    int n, i;
-    int largest, secondLargest;
+int main()
+{
+    int r, c;
+    printf("Enter rows and columns: ");
+    scanf("%d %d", &r, &c);
 
-    printf("Enter the number of elements: ");
-    scanf("%d", &n);
+    int a[r][c];
 
-    int arr[n];
-
-    printf("Enter %d elements:\n", n);
-    for (i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
-    }
-
-    largest = secondLargest = -2147483648;
-
-    for (i = 0; i < n; i++) {
-        if (arr[i] > largest) {
-            secondLargest = largest;
-            largest = arr[i];
-        }
-        else if (arr[i] > secondLargest && arr[i] != largest) {
-            secondLargest = arr[i];
+    printf("Enter matrix elements:\n");
+    for (int i = 0; i < r; i++)
+    {
+        for (int j = 0; j < c; j++)
+        {
+            scanf("%d", &a[i][j]);
         }
     }
 
-    printf("Second largest element = %d\n", secondLargest);
+    printf("Diagonal Traversal: ");
+
+    // Starting points of diagonals
+    for (int k = 0; k < r + c - 1; k++)
+    {
+        int row, col;
+
+        if (k < c)
+        {
+            row = 0;
+            col = k;
+        }
+        else
+        {
+            row = k - c + 1;
+            col = c - 1;
+        }
+
+        while (row < r && col >= 0)
+        {
+            printf("%d ", a[row][col]);
+            row++;
+            col--;
+        }
+    }
 
     return 0;
 }
