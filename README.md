@@ -49,3 +49,4 @@ Solutions for the **100 Days of Code (Basics of Coding with C)** challenge at UP
 | Day 35 | 2026-09-17 | Arrays (1D) | [g.c](Day%2035/g.c), [o.c](Day%2035/o.c) |
 | Day 36 | 2026-09-18 | 2D Arrays | [e.c](Day%2036/e.c), [l.c](Day%2036/l.c) |
 | Day 37 | 2026-09-19 | 2D Arrays | [ar.c](Day%2037/ar.c), [arr.c](Day%2037/arr.c) |
+| Day 38 | 2026-09-20 | 2D Arrays | [mat.c](Day%2038/mat.c), [matrix.c](Day%2038/matrix.c) |
