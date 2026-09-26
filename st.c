@@ -1,32 +1,31 @@
 #include <stdio.h>
+#include <string.h>
 
 int main() {
-    char str[100];
-    int i, spaces = 0, digits = 0, special = 0;
+    char str[200];
+    int i, start = 0, end, j;
+    char temp;
 
-    printf("Enter a string: ");
+    printf("Enter a sentence: ");
     fgets(str, sizeof(str), stdin);
 
-    for (i = 0; str[i] != '\0'; i++) {
-        if (str[i] == ' ') {
-            spaces++;
-        }
-        else if (str[i] >= '0' && str[i] <= '9') {
-            digits++;
-        }
-        else if ((str[i] >= 'a' && str[i] <= 'z') ||
-                 (str[i] >= 'A' && str[i] <= 'Z') ||
-                 str[i] == '\n') {
-            // Alphabet and newline are ignored
-        }
-        else {
-            special++;
+    int len = strlen(str);
+
+    for (i = 0; i <= len; i++) {
+        if (str[i] == ' ' || str[i] == '\n' || str[i] == '\0') {
+            end = i - 1;
+
+            for (j = start; j < end; j++, end--) {
+                temp = str[j];
+                str[j] = str[end];
+                str[end] = temp;
+            }
+
+            start = i + 1;
         }
     }
 
-    printf("Spaces=%d\n", spaces);
-    printf("Digits=%d\n", digits);
-    printf("Special=%d\n", special);
+    printf("Sentence after reversing each word: %s", str);
 
     return 0;
 }
