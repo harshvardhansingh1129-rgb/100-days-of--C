@@ -1,21 +1,30 @@
+// Q97: Print the initials of a name.
+
 #include <stdio.h>
 
 int main() {
-    int n, i;
-    float sum = 0;
+    char name[100];
+    int i;
 
-    printf("Enter the number of terms: ");
-    scanf("%d", &n);
+    printf("Enter your full name: ");
+    fgets(name, sizeof(name), stdin);
 
-    for (i = 1; i <= n; i++) {
-        if (i == 1)
-            sum = sum + 1;
-        else
-            sum = sum + (float)(2 * i - 1) / (2 * i);
+    printf("Initials: ");
 
+    // Print the first character
+    if (name[0] != ' ' && name[0] != '\n') {
+        printf("%c.", name[0]);
     }
 
-    printf("Sum of the series = %.2f", sum);
+    // Print character after every space
+    for (i = 0; name[i] != '\0'; i++) {
+        if (name[i] == ' ' && name[i + 1] != ' ' &&
+            name[i + 1] != '\n' && name[i + 1] != '\0') {
+            printf("%c.", name[i + 1]);
+        }
+    }
+
+    printf("\n");
 
     return 0;
 }

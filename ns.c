@@ -1,22 +1,36 @@
 #include <stdio.h>
+#include <string.h>
 
 int main() {
-    int n, i;
-    int arr[100];
-    int even = 0, odd = 0;
+    char name[100];
+    int i, lastSpace = -1;
 
-    scanf("%d", &n);
+    printf("Enter your full name: ");
+    fgets(name, sizeof(name), stdin);
 
-    for (i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
+    // Remove newline
+    name[strcspn(name, "\n")] = '\0';
 
-        if (arr[i] % 2 == 0)
-            even++;
-        else
-            odd++;
+    // Find the last space
+    for (i = 0; name[i] != '\0'; i++) {
+        if (name[i] == ' ') {
+            lastSpace = i;
+        }
     }
 
-    printf("Even=%d, Odd=%d", even, odd);
+    printf("Formatted Name: ");
+
+    // Print initials before surname
+    printf("%c.", name[0]);
+
+    for (i = 0; i < lastSpace; i++) {
+        if (name[i] == ' ' && i + 1 < lastSpace) {
+            printf("%c.", name[i + 1]);
+        }
+    }
+
+    // Print surname in full
+    printf(" %s\n", &name[lastSpace + 1]);
 
     return 0;
 }
