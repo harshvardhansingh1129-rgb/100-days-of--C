@@ -56,3 +56,4 @@ Solutions for the **100 Days of Code (Basics of Coding with C)** challenge at UP
 | Day 42 | 2026-09-24 | Strings | [const.c](Day%2042/const.c), [lu.c](Day%2042/lu.c) |
 | Day 43 | 2026-09-25 | Strings | [stri.c](Day%2043/stri.c), [strin.c](Day%2043/strin.c) |
 | Day 44 | 2026-09-26 | Strings | [st.c](Day%2044/st.c), [str.c](Day%2044/str.c) |
+| Day 45 | 2026-09-27 | Strings | [sp.c](Day%2045/sp.c), [su.c](Day%2045/su.c) |
