@@ -1,23 +1,27 @@
 #include <stdio.h>
 
-int main() {
-    int rows, cols, i, j, sum = 0;
+int main()
+{
+    char str[100];
+    int i, j, k;
 
-    printf("Enter number of rows and columns: ");
-    scanf("%d %d", &rows, &cols);
+    printf("Enter a string: ");
+    scanf("%s", str);
 
-    int matrix[rows][cols];
+    printf("All substrings are:\n");
 
-    printf("Enter matrix elements:\n");
+    for (i = 0; str[i] != '\0'; i++)
+    {
+        for (j = i; str[j] != '\0'; j++)
+        {
+            for (k = i; k <= j; k++)
+            {
+                printf("%c", str[k]);
+            }
 
-    for (i = 0; i < rows; i++) {
-        for (j = 0; j < cols; j++) {
-            scanf("%d", &matrix[i][j]);
-            sum = sum + matrix[i][j];
+            printf("\n");
         }
     }
-
-    printf("Sum of all elements = %d\n", sum);
 
     return 0;
 }
