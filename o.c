@@ -2,45 +2,46 @@
 
 int main()
 {
-    int r, c;
-    printf("Enter rows and columns: ");
-    scanf("%d %d", &r, &c);
+    int nums[100], n, target;
+    int first = -1, last = -1;
+    int i;
 
-    int a[r][c];
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
 
-    printf("Enter matrix elements:\n");
-    for (int i = 0; i < r; i++)
+    printf("Enter %d elements in sorted order:\n", n);
+    for(i = 0; i < n; i++)
     {
-        for (int j = 0; j < c; j++)
+        scanf("%d", &nums[i]);
+    }
+
+    printf("Enter the target element: ");
+    scanf("%d", &target);
+
+    // Find first and last occurrence
+    for(i = 0; i < n; i++)
+    {
+        if(nums[i] == target)
         {
-            scanf("%d", &a[i][j]);
+            if(first == -1)
+            {
+                first = i;
+            }
+
+            last = i;
         }
     }
 
-    printf("Diagonal Traversal: ");
-
-    // Starting points of diagonals
-    for (int k = 0; k < r + c - 1; k++)
+    if(first == -1)
     {
-        int row, col;
-
-        if (k < c)
-        {
-            row = 0;
-            col = k;
-        }
-        else
-        {
-            row = k - c + 1;
-            col = c - 1;
-        }
-
-        while (row < r && col >= 0)
-        {
-            printf("%d ", a[row][col]);
-            row++;
-            col--;
-        }
+        printf("Target not found.\n");
+        printf("-1, -1\n");
+    }
+    else
+    {
+        printf("First occurrence of %d is at index %d\n", target, first);
+        printf("Last occurrence of %d is at index %d\n", target, last);
+        printf("Output: %d, %d\n", first, last);
     }
 
     return 0;
