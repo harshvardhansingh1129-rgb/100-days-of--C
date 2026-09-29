@@ -58,3 +58,4 @@ Solutions for the **100 Days of Code (Basics of Coding with C)** challenge at UP
 | Day 44 | 2026-09-26 | Strings | [st.c](Day%2044/st.c), [str.c](Day%2044/str.c) |
 | Day 45 | 2026-09-27 | Strings | [sp.c](Day%2045/sp.c), [su.c](Day%2045/su.c) |
 | Day 46 | 2026-09-28 | Strings | [sl.c](Day%2046/sl.c), [sv.c](Day%2046/sv.c) |
+| Day 47 | 2026-09-29 | Strings | [sa.c](Day%2047/sa.c), [sl.c](Day%2047/sl.c) |
