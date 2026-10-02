@@ -2,26 +2,27 @@
 
 int main()
 {
-    char str[100];
-    int i, j, k;
+    int n, x;
+    int total, leftSum, rightSum;
 
-    printf("Enter a string: ");
-    scanf("%s", str);
+    printf("Enter a positive integer n: ");
+    scanf("%d", &n);
 
-    printf("All substrings are:\n");
+    total = n * (n + 1) / 2;
 
-    for (i = 0; str[i] != '\0'; i++)
+    for (x = 1; x <= n; x++)
     {
-        for (j = i; str[j] != '\0'; j++)
-        {
-            for (k = i; k <= j; k++)
-            {
-                printf("%c", str[k]);
-            }
+        leftSum = x * (x + 1) / 2;
+        rightSum = total - (x * (x - 1) / 2);
 
-            printf("\n");
+        if (leftSum == rightSum)
+        {
+            printf("Pivot integer = %d", x);
+            return 0;
         }
     }
+
+    printf("Pivot integer = -1");
 
     return 0;
 }
