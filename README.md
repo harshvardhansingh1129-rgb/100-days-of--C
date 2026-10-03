@@ -62,3 +62,4 @@ Solutions for the **100 Days of Code (Basics of Coding with C)** challenge at UP
 | Day 48 | 2026-09-30 | Strings | [sr.c](Day%2048/sr.c), [st.c](Day%2048/st.c) |
 | Day 49 | 2026-10-01 | Strings | [n.c](Day%2049/n.c), [ns.c](Day%2049/ns.c) |
 | Day 50 | 2026-10-02 | Strings | [d.c](Day%2050/d.c), [l.c](Day%2050/l.c) |
+| Day 51 | 2026-10-03 | Logic Enhancers | [o.c](Day%2051/o.c) |
