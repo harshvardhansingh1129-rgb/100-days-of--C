@@ -1,47 +1,34 @@
 #include <stdio.h>
 
-int main()
-{
-    int nums[100], n, target;
-    int first = -1, last = -1;
-    int i;
+int main() {
+    int n;
 
-    printf("Enter the number of elements: ");
+    printf("Enter size of array: ");
     scanf("%d", &n);
 
-    printf("Enter %d elements in sorted order:\n", n);
-    for(i = 0; i < n; i++)
-    {
-        scanf("%d", &nums[i]);
+    int arr[n];
+
+    printf("Enter elements: ");
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
 
-    printf("Enter the target element: ");
-    scanf("%d", &target);
+    // Find previous greater element using brute force
+    for (int i = 0; i < n; i++) {
+        int previousGreater = -1;
 
-    // Find first and last occurrence
-    for(i = 0; i < n; i++)
-    {
-        if(nums[i] == target)
-        {
-            if(first == -1)
-            {
-                first = i;
+        // Start from the nearest element on the left
+        for (int j = i - 1; j >= 0; j--) {
+            if (arr[j] > arr[i]) {
+                previousGreater = arr[j];
+                break;  // nearest greater element found
             }
-
-            last = i;
         }
-    }
 
-    if(first == -1)
-    {
-        printf("Target not found.\n");
-        printf("-1, -1\n");
-    }
-    else
-    {
-        printf("First occurrence of %d is at index %d\n", target, first);
-        printf("Last occurrence of %d is at index %d\n", target, last);
-        printf("Output: %d, %d\n", first, last);
+        if (i > 0)
+            printf(", ");
+
+        printf("%d", previousGreater);
     }
 
     return 0;
