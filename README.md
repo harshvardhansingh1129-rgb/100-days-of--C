@@ -64,3 +64,4 @@ Solutions for the **100 Days of Code (Basics of Coding with C)** challenge at UP
 | Day 50 | 2026-10-02 | Strings | [d.c](Day%2050/d.c), [l.c](Day%2050/l.c) |
 | Day 51 | 2026-10-03 | Logic Enhancers | [o.c](Day%2051/o.c) |
 | Day 52 | 2026-10-04 | Logic Enhancers | [s.c](Day%2052/s.c) |
+| Day 53 | 2026-10-05 | Logic Enhancers | [t.c](Day%2053/t.c) |
