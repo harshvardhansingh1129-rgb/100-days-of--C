@@ -1,24 +1,35 @@
 #include <stdio.h>
 
 int main() {
-    int arr[] = {1, 3, 2, 4};
-    int n = 4;
+    int arr[100], n, i, j;
+    int found;
 
-    for (int i = 0; i < n; i++) {
-        int next = -1;
+    printf("Enter size of array: ");
+    scanf("%d", &n);
 
-        for (int j = i + 1; j < n; j++) {
+    printf("Enter array elements: ");
+    for (i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    for (i = 0; i < n; i++) {
+        found = 0;
+
+        for (j = i - 1; j >= 0; j--) {
             if (arr[j] > arr[i]) {
-                next = arr[j];
+                printf("%d", arr[j]);
+                found = 1;
                 break;
             }
         }
 
-        if (i > 0) {
-            printf(", ");
+        if (found == 0) {
+            printf("-1");
         }
 
-        printf("%d", next);
+        if (i < n - 1) {
+            printf(", ");
+        }
     }
 
     return 0;
