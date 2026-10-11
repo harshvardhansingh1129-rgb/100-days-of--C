@@ -1,38 +1,40 @@
 #include <stdio.h>
 
-int main()
-{
-    int n, i;
-    int total = 0, leftSum = 0;
-    int pivot = -1;
+int main() {
+    int arr[100], n, k, i, j;
+    int sum, maxSum;
 
-    printf("Enter the number of elements: ");
+    printf("Enter the size of array: ");
     scanf("%d", &n);
 
-    int nums[n];
-
-    printf("Enter the elements: ");
-    for(i = 0; i < n; i++)
-    {
-        scanf("%d", &nums[i]);
-        total = total + nums[i];
+    printf("Enter array elements: ");
+    for (i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
 
-    for(i = 0; i < n; i++)
-    {
-        // Right sum = total - left sum - current element
-        int rightSum = total - leftSum - nums[i];
+    printf("Enter the value of k: ");
+    scanf("%d", &k);
 
-        if(leftSum == rightSum)
-        {
-            pivot = i;
-            break;   // gives the leftmost pivot index
+    if (k <= 0 || k > n) {
+        printf("Invalid value of k\n");
+        return 0;
+    }
+
+    maxSum = arr[0];
+
+    for (i = 0; i <= n - k; i++) {
+        sum = 0;
+
+        for (j = i; j < i + k; j++) {
+            sum = sum + arr[j];
         }
 
-        leftSum = leftSum + nums[i];
+        if (sum > maxSum) {
+            maxSum = sum;
+        }
     }
 
-    printf("Pivot index = %d\n", pivot);
+    printf("Maximum sum: %d\n", maxSum);
 
     return 0;
 }
