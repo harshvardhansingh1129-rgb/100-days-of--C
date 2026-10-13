@@ -1,37 +1,40 @@
 #include <stdio.h>
 
 int main() {
-    int n, i, j, count;
-    int majority = -1;
+    int n, k, i, j;
+    int arr[100];
 
     printf("Enter the size of array: ");
     scanf("%d", &n);
 
-    int nums[n];
-
-    printf("Enter the elements: ");
+    printf("Enter array elements: ");
     for (i = 0; i < n; i++) {
-        scanf("%d", &nums[i]);
+        scanf("%d", &arr[i]);
     }
 
-    // Check each element
-    for (i = 0; i < n; i++) {
-        count = 0;
+    printf("Enter window size k: ");
+    scanf("%d", &k);
 
-        for (j = 0; j < n; j++) {
-            if (nums[i] == nums[j]) {
-                count++;
+    if (k <= 0 || k > n) {
+        printf("Invalid window size");
+        return 0;
+    }
+
+    for (i = 0; i <= n - k; i++) {
+        int found = 0;
+
+        for (j = i; j < i + k; j++) {
+            if (arr[j] < 0) {
+                printf("%d ", arr[j]);
+                found = 1;
+                break;
             }
         }
 
-        // Must appear strictly more than n/2 times
-        if (count > n / 2) {
-            majority = nums[i];
-            break;
+        if (found == 0) {
+            printf("0 ");
         }
     }
-
-    printf("Majority Element: %d", majority);
 
     return 0;
 }
