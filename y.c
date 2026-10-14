@@ -1,41 +1,34 @@
 #include <stdio.h>
 
-int main() {
-    int n, k, i, j, max;
+int main()
+{
+    int arr[100], n, i;
+    int currentSum, maxSum;
 
-    printf("Enter array size: ");
+    printf("Enter the size of array: ");
     scanf("%d", &n);
 
-    int arr[n];
-
     printf("Enter array elements: ");
-    for (i = 0; i < n; i++) {
+    for(i = 0; i < n; i++)
+    {
         scanf("%d", &arr[i]);
     }
 
-    printf("Enter k: ");
-    scanf("%d", &k);
+    currentSum = arr[0];
+    maxSum = arr[0];
 
-    if (k <= 0 || k > n) {
-        printf("Invalid k");
-        return 0;
+    for(i = 1; i < n; i++)
+    {
+        if(currentSum + arr[i] > arr[i])
+            currentSum = currentSum + arr[i];
+        else
+            currentSum = arr[i];
+
+        if(currentSum > maxSum)
+            maxSum = currentSum;
     }
 
-    for (i = 0; i <= n - k; i++) {
-        max = arr[i];
-
-        for (j = i; j < i + k; j++) {
-            if (arr[j] > max) {
-                max = arr[j];
-            }
-        }
-
-        printf("%d", max);
-
-        if (i < n - k) {
-            printf(" ");
-        }
-    }
+    printf("%d", maxSum);
 
     return 0;
 }
