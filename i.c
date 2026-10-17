@@ -1,36 +1,32 @@
 #include <stdio.h>
+#include <string.h>
 
 int main() {
-    int arr[100], n, i, j;
-    int found;
+    char s[1000], t[1000];
+    int freq[26] = {0};
+    int i;
 
-    printf("Enter size of array: ");
-    scanf("%d", &n);
+    scanf("%s", s);
+    scanf("%s", t);
 
-    printf("Enter array elements: ");
-    for (i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
+    if (strlen(s) != strlen(t)) {
+        printf("Not Anagram");
+        return 0;
     }
 
-    for (i = 0; i < n; i++) {
-        found = 0;
+    for (i = 0; s[i] != '\0'; i++) {
+        freq[s[i] - 'a']++;
+        freq[t[i] - 'a']--;
+    }
 
-        for (j = i - 1; j >= 0; j--) {
-            if (arr[j] > arr[i]) {
-                printf("%d", arr[j]);
-                found = 1;
-                break;
-            }
-        }
-
-        if (found == 0) {
-            printf("-1");
-        }
-
-        if (i < n - 1) {
-            printf(", ");
+    for (i = 0; i < 26; i++) {
+        if (freq[i] != 0) {
+            printf("Not Anagram");
+            return 0;
         }
     }
+
+    printf("Anagram");
 
     return 0;
 }
