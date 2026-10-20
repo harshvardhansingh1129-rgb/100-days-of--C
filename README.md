@@ -79,3 +79,4 @@ Solutions for the **100 Days of Code (Basics of Coding with C)** challenge at UP
 | Day 65 | 2026-10-17 | Logic Enhancers | [u.c](Day%2065/u.c) |
 | Day 66 | 2026-10-18 | Logic Enhancers | [y.c](Day%2066/y.c) |
 | Day 67 | 2026-10-19 | Logic Enhancers | [t.c](Day%2067/t.c), [r.c](Day%2067/r.c) |
+| Day 68 | 2026-10-20 | Logic Enhancers | [i.c](Day%2068/i.c) |
