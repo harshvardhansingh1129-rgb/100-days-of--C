@@ -1,28 +1,30 @@
 #include <stdio.h>
 
-int main() {
-    int rows, cols, i, j;
+int main()
+{
+    int n, i, j;
 
-    printf("Enter number of rows and columns: ");
-    scanf("%d %d", &rows, &cols);
+    printf("Enter size of array: ");
+    scanf("%d", &n);
 
-    int matrix[rows][cols];
+    int arr[n];
 
-    printf("Enter matrix elements:\n");
-
-    for (i = 0; i < rows; i++) {
-        for (j = 0; j < cols; j++) {
-            scanf("%d", &matrix[i][j]);
-        }
+    printf("Enter array elements: ");
+    for(i = 0; i < n; i++)
+    {
+        scanf("%d", &arr[i]);
     }
 
-    printf("The matrix is:\n");
-
-    for (i = 0; i < rows; i++) {
-        for (j = 0; j < cols; j++) {
-            printf("%d ", matrix[i][j]);
+    for(i = 0; i < n; i++)
+    {
+        for(j = i + 1; j < n; j++)
+        {
+            if(arr[i] == arr[j])
+            {
+                printf("Repeated element: %d\n", arr[i]);
+                return 0;
+            }
         }
-        printf("\n");
     }
 
     return 0;
