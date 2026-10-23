@@ -82,3 +82,4 @@ Solutions for the **100 Days of Code (Basics of Coding with C)** challenge at UP
 | Day 68 | 2026-10-20 | Logic Enhancers | [i.c](Day%2068/i.c) |
 | Day 69 | 2026-10-21 | Logic Enhancers | [y.c](Day%2069/y.c) |
 | Day 70 | 2026-10-22 | File Handling | [r.c](Day%2070/r.c) |
+| Day 71 | 2026-10-23 | File Handling | [w.c](Day%2071/w.c) |
