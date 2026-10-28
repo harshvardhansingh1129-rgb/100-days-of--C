@@ -87,3 +87,4 @@ Solutions for the **100 Days of Code (Basics of Coding with C)** challenge at UP
 | Day 73 | 2026-10-25 | File Handling | [w.c](Day%2073/w.c), [sample.txt](Day%2073/sample.txt) |
 | Day 74 | 2026-10-26 | File Handling | [info.txt](Day%2074/info.txt), [t.c](Day%2074/t.c) |
 | Day 75 | 2026-10-27 | File Handling | [q.c](Day%2075/q.c) |
+| Day 76 | 2026-10-28 | File Handling | [e.c](Day%2076/e.c) |
