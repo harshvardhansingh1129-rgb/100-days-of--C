@@ -2,20 +2,25 @@
 
 int main() {
     FILE *fp;
-    char str[100];
+    char filename[100];
+    char ch;
 
-    fp = fopen("info.txt", "r");
+    printf("Enter filename: ");
+    scanf("%99s", filename);
+
+    fp = fopen(filename, "r");
 
     if (fp == NULL) {
-        printf("File not found!");
-        return 1;
-    }
+        printf("Error: File does not exist!\n");
+    } else {
+        printf("File opened successfully.\n");
 
-    while (fgets(str, sizeof(str), fp) != NULL) {
-        printf("%s", str);
-    }
+        while ((ch = fgetc(fp)) != EOF) {
+            putchar(ch);
+        }
 
-    fclose(fp);
+        fclose(fp);
+    }
 
     return 0;
 }
