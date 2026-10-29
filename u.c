@@ -1,40 +1,34 @@
 #include <stdio.h>
+#include <ctype.h>
 
 int main() {
-    int n, k, i, j;
-    int arr[100];
+    FILE *fp1, *fp2;
+    char ch;
 
-    printf("Enter the size of array: ");
-    scanf("%d", &n);
+    fp1 = fopen("input.txt", "r");
 
-    printf("Enter array elements: ");
-    for (i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
+    if (fp1 == NULL) {
+        printf("Error opening input.txt!");
+        return 1;
     }
 
-    printf("Enter window size k: ");
-    scanf("%d", &k);
+    fp2 = fopen("output.txt", "w");
 
-    if (k <= 0 || k > n) {
-        printf("Invalid window size");
-        return 0;
+    if (fp2 == NULL) {
+        printf("Error creating output.txt!");
+        fclose(fp1);
+        return 1;
     }
 
-    for (i = 0; i <= n - k; i++) {
-        int found = 0;
-
-        for (j = i; j < i + k; j++) {
-            if (arr[j] < 0) {
-                printf("%d ", arr[j]);
-                found = 1;
-                break;
-            }
-        }
-
-        if (found == 0) {
-            printf("0 ");
-        }
+    while ((ch = fgetc(fp1)) != EOF) {
+        ch = toupper((unsigned char)ch);
+        fputc(ch, fp2);
     }
+
+    fclose(fp1);
+    fclose(fp2);
+
+    printf("File converted successfully!");
 
     return 0;
 }
