@@ -91,3 +91,4 @@ Solutions for the **100 Days of Code (Basics of Coding with C)** challenge at UP
 | Day 77 | 2026-10-29 | File Handling | [data.txt](Day%2077/data.txt), [y.c](Day%2077/y.c) |
 | Day 78 | 2026-10-30 | File Handling | [q.c](Day%2078/q.c) |
 | Day 79 | 2026-10-31 | File Handling | [u.c](Day%2079/u.c) |
+| Day 80 | 2026-11-01 | File Handling | [r.c](Day%2080/r.c) |
